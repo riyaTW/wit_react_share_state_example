@@ -1,0 +1,15 @@
+{
+  "name": "wit_react_share_state_example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "devDependencies": {
+    "react-scripts": "^1.1.5"
+  },
+  "dependencies": {
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1"
+  }
+}
