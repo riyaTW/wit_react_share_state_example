@@ -1,11 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CurrencyInput from './CurrencyInput';
+import CurrencyConverter from './CurrencyConverter';
 
 ReactDOM.render(
-    <div>
-        <CurrencyInput />
-        <CurrencyInput />
-    </div>,
+    <CurrencyConverter/>,
     document.getElementById('root')
 );
