@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class CurrencyInput extends React.Component {
 
@@ -6,7 +7,7 @@ class CurrencyInput extends React.Component {
         const {amount, currency} = this.props;
         return (
             <div>
-                <input type='text' name='currency' value={amount} onChange={this.props.changeAmount}/>
+                <input type='text' name='currency' value={amount || 0} onChange={this.props.changeAmount}/>
                 <select value={currency} onChange={this.props.changeCurrency}>
                     <option value="INR">Indian Rupee</option>
                     <option value="USD">US Dollar</option>
@@ -15,5 +16,10 @@ class CurrencyInput extends React.Component {
         );
     }
 }
+
+CurrencyInput.propTypes = {
+    amount: PropTypes.number,
+    currency: PropTypes.string.isRequired
+};
 
 export default CurrencyInput;
