@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CurrencyConverter from './CurrencyConverter';
+import RefExample from './RefExample';
 
 ReactDOM.render(
-    <CurrencyConverter/>,
+    <RefExample/>,
     document.getElementById('root')
 );
